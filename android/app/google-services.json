@@ -7,7 +7,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:408723214142:android:637376af15bd8250c4266f",
+        "mobilesdk_app_id": "1:408723214142:android:84d8c2ef76425841c4266f",
         "android_client_info": {
           "package_name": "com.example.tds_time_keeper"
         }
@@ -29,35 +29,13 @@
             {
               "client_id": "408723214142-7npkh30ko24rib9t00689sgmlff9ocqn.apps.googleusercontent.com",
               "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:408723214142:android:789a7a6256391fa5c4266f",
-        "android_client_info": {
-          "package_name": "com.tds_time_keeper"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "408723214142-7npkh30ko24rib9t00689sgmlff9ocqn.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBW7ddTLE4L10kHri6SKE2zn0ENGLjGMg4"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
+            },
             {
-              "client_id": "408723214142-7npkh30ko24rib9t00689sgmlff9ocqn.apps.googleusercontent.com",
-              "client_type": 3
+              "client_id": "408723214142-feple1lcj3liit7f6r98tsbnsttaslcg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tdsTimeKeeper"
+              }
             }
           ]
         }

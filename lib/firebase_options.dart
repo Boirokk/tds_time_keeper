@@ -17,7 +17,10 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -25,7 +28,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -43,18 +49,9 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyB0pA9Zp3eEKfruzsokkNRlXzP4Nmwt-1c',
-    appId: '1:408723214142:web:c74f1d9b8561344ac4266f',
-    messagingSenderId: '408723214142',
-    projectId: 'tdstimekeeper',
-    authDomain: 'tdstimekeeper.firebaseapp.com',
-    storageBucket: 'tdstimekeeper.appspot.com',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyBW7ddTLE4L10kHri6SKE2zn0ENGLjGMg4',
-    appId: '1:408723214142:android:637376af15bd8250c4266f',
+    appId: '1:408723214142:android:84d8c2ef76425841c4266f',
     messagingSenderId: '408723214142',
     projectId: 'tdstimekeeper',
     storageBucket: 'tdstimekeeper.appspot.com',
@@ -62,17 +59,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyAcAVP9jwHZ-YPEXnhfOTqdE1G_mo-cTSA',
-    appId: '1:408723214142:ios:a5adc1a0378c809ec4266f',
-    messagingSenderId: '408723214142',
-    projectId: 'tdstimekeeper',
-    storageBucket: 'tdstimekeeper.appspot.com',
-    iosClientId: '408723214142-feple1lcj3liit7f6r98tsbnsttaslcg.apps.googleusercontent.com',
-    iosBundleId: 'com.example.tdsTimeKeeper',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAcAVP9jwHZ-YPEXnhfOTqdE1G_mo-cTSA',
-    appId: '1:408723214142:ios:a5adc1a0378c809ec4266f',
+    appId: '1:408723214142:ios:ea5412554f75c548c4266f',
     messagingSenderId: '408723214142',
     projectId: 'tdstimekeeper',
     storageBucket: 'tdstimekeeper.appspot.com',
